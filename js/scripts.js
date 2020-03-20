@@ -61,3 +61,44 @@
   });
 
 })(jQuery); // End of use strict
+
+
+// function myFunction() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more");
+//   var btnText = document.getElementById("myBtn");
+
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "المزيد";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "إخفاء";
+//     moreText.style.display = "inline";
+//   }
+// }
+
+$(document).ready(function() {
+
+ 
+    $(".myBtn").click(function(){
+
+       if($(this).text()=="المزيد"){
+        $(this).prev().fadeIn(100, function(){
+         $(this).next().text("إخفاء");
+        });
+      }
+
+      if($(this).text()=="إخفاء"){
+        $(this).prev().fadeOut(100, function(){
+         $(this).next().text("المزيد");
+        });
+      }
+        //  $(this).prev().fadeOut(100, function(){
+        //   $(this).text().html("المزيد");
+        // });
+
+        
+    });
+});

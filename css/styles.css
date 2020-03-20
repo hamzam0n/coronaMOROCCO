@@ -10132,11 +10132,11 @@ border-style: solid;
  }
 
  .card-text .card-title {
-  direction:  rtl;
+  text-align: right;
 
  }
 
- .card{
+ .page-section .card{
   height: 160px;
   overflow-y: scroll;
  }
@@ -10144,4 +10144,28 @@ border-style: solid;
  .call{
    padding: 30px;
    border-radius: 20px;
+ }
+
+
+ .news-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+ }
+
+ .news-section .card{
+    margin-bottom: 20px;
+    direction: rtl;
+ }
+
+ .news-section .card *{
+    text-align: right;
+    float: 
+ }
+
+ #more{
+  display: none
+ }
+
+ .carousel img {
+    height: 900px
  }
